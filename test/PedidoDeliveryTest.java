@@ -38,8 +38,8 @@ public class PedidoDeliveryTest {
 
     @Test
     public void calculaValorTotalComEntrega12Km(){
-        Pedido pedido12km = new Pedido(pizzaBasica, 10.1);
-        assertEquals(37.0, pedido12km.valorTotal());
+        Pedido pedido12km = new Pedido(pizzaBasica, 12);
+        assertEquals(35.0, pedido12km.valorTotal());
     }
 
 }

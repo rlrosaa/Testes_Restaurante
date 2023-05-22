@@ -38,7 +38,7 @@ public class Pedido implements Comparable<Pedido>{
     private static int proximo_id = 1;          //para id automático
     private int idPedido;
     private Data dataPedido;
-    private ComparableList<Comida> itens;
+    public ComparableList<Comida> itens;
     private IPedido categoriaPedido;
 
     // public static void setProximoPedido(int id){

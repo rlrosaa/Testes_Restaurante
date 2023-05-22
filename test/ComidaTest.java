@@ -55,7 +55,16 @@ public class ComidaTest {
         assertEquals(BigDecimal.valueOf(25).setScale(2),pizza.precoFinal( ));
     }
 
+    @Test
+    public void comparaPizzasIguais(){
+        assertEquals(0, pizza.compareTo(pizza2));
+    }
 
+    @Test
+    public void comparaPizzasDiferentes(){
+        pizza2.adicionarIngrediente(2);
+        assertEquals(1, pizza.compareTo(pizza2));
+    }
 
     
 }
