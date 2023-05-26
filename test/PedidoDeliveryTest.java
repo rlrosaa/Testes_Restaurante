@@ -21,7 +21,7 @@ public class PedidoDeliveryTest {
     @Test
     public void naoPodeAdicionarAcimaDoLimite(){
         for(int i=0; i<11; i++)
-            meuPedido.addItem(new Pizza());
+            meuPedido.addComida(new Pizza());
         assertEquals(10, meuPedido.quantidadeDeItens());
     }
 
